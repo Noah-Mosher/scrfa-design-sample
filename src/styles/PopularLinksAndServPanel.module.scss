@@ -1,0 +1,23 @@
+.LinksContainer {
+    width: 100%;
+    padding:  2rem 23rem;
+    :global(.ant-typography) {
+        font-family: 'Open sans', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        color: #142b47;
+    }
+}
+.pageBreak {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #142b47;
+}
+
+.links {
+    :global(.ant-typography) {
+        color: #0074c1;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}
