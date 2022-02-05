@@ -1,0 +1,124 @@
+.EventsScheduleContainer {
+    width: 50%;
+    padding-left: 4rem;
+
+    :global(.ant-btn) {
+        background-color: #0074c1;
+        border: transparent;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    :global(.ant-btn:hover) {
+        background-color: #225089;
+        border: transparent;
+    }
+    :global(.ant-btn:focus) {
+        background-color: #1b3a61;
+        border: transparent;
+    }
+}
+
+.headerBorder {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width : 15%;
+    height: 3px;
+    background-color: #8c6910;
+}
+
+.CalendarItem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+.CalendarItemCancelled {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    :global(.ant-typography mark) {
+        background-color: red;
+        color: white;
+        margin-left: .25rem;
+        padding: 4px;
+        border-radius: .2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+     }
+}
+.CalendarItemUpdated {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    :global(.ant-typography mark) {
+        background-color: #C3C3C3;
+        margin-left: .25rem;
+        padding: 4px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        border-radius: .2rem;
+     }
+}
+.CalendarItemToday {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    :global(.ant-typography mark) {
+        background-color: green;
+        color: white;
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 600;
+        margin-left: .25rem;
+        padding: 4px;
+        border-radius: .2rem;
+     }
+}
+
+.Calendardate {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: .3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: #8c6910;
+    margin-right: .25rem;
+    
+
+    :global(.ant-typography) {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.Month {padding-top: 1.2rem;
+    height: min-content;
+    line-height: .4rem;
+    font-weight: 600;
+}
+.Day {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.EventInfo {
+    width: 75%;
+    padding-bottom: .5rem;
+    border-bottom: thin solid #8c6910;
+    color: #8c6910;
+}
+
+@media only screen and (max-width: 900px){
+    .EventsScheduleContainer {
+        padding: 1rem;
+        width: 100%;
+    }
+    .EventInfo {
+        width: 100%;
+    }
+}

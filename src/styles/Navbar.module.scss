@@ -1,4 +1,6 @@
 .Navbar_Container {
+    position: fixed;
+    top: 0;
     z-index: 999;
     display: flex;
     flex-direction: row;
@@ -44,7 +46,8 @@
         margin: 0;
     }
     h1{
-        font-family: 'Roboto slab', serif;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 600;;
         margin: 0 !important;
         line-height: 1.5rem;
         font-size: 18px;
@@ -65,11 +68,78 @@
 }
 
 .Links{
-    margin-right: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
     :global(a.ant-typography){
         margin-left: 2.5rem !important;
         color: #1b3a61;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
     }
+    :global(.ant-btn) {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5rem;
+        background-color: white;
+        color: #0074c1;
+        border: #0074c1 thin solid;
+    }
+    :global(.ant-btn:hover) {
+        background-color: #0074c1;
+        color: white;
+    }
+    :global(.ant-btn:active) {
+        background-color: #0074c1;
+        color: white;
+    }
 }
+.SearchContainer {
+    padding: 1rem;
+    top: 72px;
+    right: 1rem;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    background-color: #0074c1;
+    z-index: 1000;
+    :global(.ant-btn) {
+        width: 20%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: .5rem;
+        background-color: #0074c1;
+        color: white;
+        border: white thin solid;
+    }
+    :global(.ant-btn:hover) {
+        background-color: #0074c1;
+        color: white;
+    }
+
+}
+@media  only screen and (max-width: 1200px) {
+    .Links{
+        :global(.ant-typography) {
+        display: none;
+    }
+}
+}
+@media  only screen and (max-width: 967px) {
+    .Links{
+        display: none;
+}
+}
+
+@media  only screen and (max-width: 600px) {
+    .NavText {
+        display: none;
+    }
+}
+    

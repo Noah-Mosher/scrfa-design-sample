@@ -1,0 +1,62 @@
+.RecentUpdatesContainer {
+    width: 50%;
+    padding-right: 2rem;
+
+    :global(.ant-btn) {
+        background-color: #0074c1;
+        border: transparent;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    :global(.ant-btn:hover) {
+        background-color: #225089;
+        border: transparent;
+    }
+    :global(.ant-btn:focus) {
+        background-color: #1b3a61;
+        border: transparent;
+    }
+}
+
+.headerBorder {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width : 15%;
+    height: 3px;
+    background-color: #8c6910;
+}
+
+.UpdateRow {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    :global(a.ant-typography) {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        text-decoration: underline !important;
+        color: #0074c1;
+    }
+    :global(.ant-typography) {
+        margin-bottom: .5rem;
+        font-family: sans-serif;
+        color: #666666;
+    }
+}
+
+.PublishedRow {
+    :global(.ant-typography mark) {
+       background-color: #C3C3C3;
+       margin-left: .25rem;
+       padding: 2px;
+       border-radius: .2rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .RecentUpdatesContainer {
+        padding: 1rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,169 @@
+.MainNavContainer {
+    top: 100px;
+    left: 0;
+    z-index: 999;
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    position: fixed;
+    flex-direction: row;
+    background-color: white;
+    border-bottom: 8px  #1b3a61 solid;
+    box-shadow:         inset 0px 4px 3px -3px rgba(183, 183, 183, 0.539);
+}
+
+.MainNavSider {
+    width: 19.8%;
+    background-color: #e1e5ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+
+    :global(.ant-typography) {
+        color: black;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        padding-bottom: .75rem;
+    }
+}
+.SiderItems{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.SiderItem {
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 65%;
+    border-bottom: thin #cccccc solid;
+}
+
+.HeaderBreak {
+    width: 25%;
+    height: 2px;
+    background-color: #8c6910;
+    margin-bottom: 1rem;
+}
+
+.MainNavColumn {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem 2rem 2rem;
+    h3 {
+        margin-top: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        color: #1b3a61
+    }
+    h5 {
+        font-family: 'Open Sans', sans-serif;
+        color: #666666;
+    }
+}
+
+.MobileNavDrawers{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .SiderItems {
+        padding-top: 1rem;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .SiderItemLast{
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 65%;
+    }
+    .MainNavSider{
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .MobileNavDrawers{
+        height: fit-content;
+        width: 60%;
+        display: flex;
+        :global(.ant-collapse) {
+            width: 100%;
+        }
+        :global(.ant-collapse-content > .ant-collapse-content-box){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            h5 {
+                flex-basis: 33.33%;
+            }
+        }
+    }
+    .MainNavColumn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .MainNavSider{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+    .MobileNavDrawers{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        :global(.ant-collapse) {
+            width: 100%;
+        }
+        :global(.ant-collapse-content > .ant-collapse-content-box){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h5 {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .SiderItems {
+        padding-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .SiderItem {
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-bottom: thin #cccccc solid;
+    }
+    .SiderItemLast{
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-bottom: thin #cccccc solid;
+    }
+}

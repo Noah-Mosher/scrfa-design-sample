@@ -3,13 +3,7 @@ import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import styles from '../styles/MainLandingInfo.module.scss';
 
-const MainLandingInfo = ({siteSearchValue,setSiteSearchValue}) => {
-
-  const handleChange = ((e) => {
-    setSiteSearchValue(
-      e.target.value
-    );
-  });
+const MainLandingInfo = () => {
 
   return <div className={styles.MainLandingInfoContainer}>
     <div className={styles.LandingText}>
@@ -17,7 +11,7 @@ const MainLandingInfo = ({siteSearchValue,setSiteSearchValue}) => {
       <Typography.Text>to facilitate informed policy decisions and</Typography.Text> 
       <Typography.Text>administration of services</Typography.Text>
       <div className={styles.SearchContainer}>
-        <Input placeholder='Search rfa.sc.gov' value={siteSearchValue} onSearch={handleChange}></Input>
+        <Input placeholder='Search rfa.sc.gov'></Input>
         <Button type='search' icon={<AiOutlineSearch />}>SEARCH</Button>
       </div>
     </div>

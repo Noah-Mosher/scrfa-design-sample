@@ -59,3 +59,22 @@
 .CardLabel {
     max-width: 6rem;
 }
+
+
+@media only screen and (max-width: 800px) {
+    .LandingText{
+        display: flex;
+        flex-direction: column;
+    
+        :global(.ant-typography) {
+            color: white;
+            font-family: 'Roboto Slab';
+            font-size: 20px;
+            font-weight: 600;
+    
+        }
+    }
+    .MainLandingInfoContainer{
+        height: fit-content;
+    }
+}

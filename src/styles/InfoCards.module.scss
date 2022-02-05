@@ -21,14 +21,15 @@
     }
     
     :global(.ant-image) {
-        width: 8rem;
+        width: 7rem;
         height: auto;
     }
 
     :global(.ant-typography) {
-        width: 7rem;
-        font-family: 'Open sans';
-        font-weight: 800;
+        width: 12rem;
+        font-size: 16px;
+        font-family: 'Open sans', sans-serif;
+        font-weight:  800 !important;
         color: #142b47;
     }
 
@@ -36,5 +37,15 @@
 }
 
 .ImageHolder {
-    height: 9rem;
+    height: 8rem;
 }
+
+
+@media only screen and (max-width: 1150px) {
+    .CardsContainer{
+        padding: 0 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+} 

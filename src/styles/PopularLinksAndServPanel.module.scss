@@ -1,23 +1,52 @@
 .LinksContainer {
     width: 100%;
-    padding:  2rem 23rem;
+    padding:  2rem 2rem;
     :global(.ant-typography) {
         font-family: 'Open sans', sans-serif;
         font-size: 24px;
-        font-weight: 800;
+        font-weight: 600;
         color: #142b47;
     }
 }
 .pageBreak {
-    width: 100%;
+    width: 99%;
     height: 0.5rem;
     background-color: #142b47;
 }
 
 .links {
+    display: flex;
+    flex-direction: row;
+    :global(.ant-col) {
+        display: flex;
+        flex-direction: column;
+    }
     :global(.ant-typography) {
+        margin: 1rem 1rem 1rem 0;
         color: #0074c1;
         font-size: 14px;
+        text-align: left;
         text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        :global(.ant-col) {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        :global(.ant-typography) {
+            margin: 1rem 1rem 1rem 0;
+            color: #0074c1;
+            font-size: 1rem;
+            text-align: left;
+            text-decoration: underline;
+        }
     }
 }
