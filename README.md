@@ -4,7 +4,7 @@
 
 - [x] Included all elements and features displayed in artifact
 - [x] Styled for Responsive Flow that should allow any device to view app
-- [x] Stick NavBar / NavMenus with Dynamic Icon for open and close
+- [x] Sticky NavBar / NavMenus with Dynamic Icon for open and close
 
 
 ### TO RUN PROJECT 
